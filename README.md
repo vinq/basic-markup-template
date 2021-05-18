@@ -1,1 +1,3 @@
-# basic-markup-template
+# basic-markup-template  
+  
+Пример базовой верстки для веб приложений с базовым набором автоматизаций
