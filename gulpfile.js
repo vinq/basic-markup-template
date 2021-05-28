@@ -14,7 +14,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('concat', function () {
-  return gulp.src(['./js/**/*.js', './js/**/*.ts'])
+  return gulp.src(['./js/libs/**/*.js', './js/**/*.ts'])
   	.pipe(ts({
             "noImplicitAny": false,
         	"module": "none",
