@@ -1,7 +1,7 @@
 {
-  "name": "murkup_template",
-  "version": "0.1.0",
-  "description": "Basic markup template with jquery and sass and js concatenation",
+  "name": "basic-markup-template",
+  "version": "0.2.0",
+  "description": "Basic markup template with jquery and sass and typescript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,8 +15,13 @@
     "gulp": "^4.0.2",
     "gulp-cli": "^2.2.0",
     "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
     "gulp-sass": "^4.0.2",
-    "jquery": "^3.3.1",
-    "sass.js": "^0.11.1"
+    "gulp-typescript": "^5.0.1",
+    "sass.js": "^0.11.1",
+    "typescript": "^4.3.2"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.5"
   }
 }
