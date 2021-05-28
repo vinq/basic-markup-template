@@ -4,7 +4,6 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var ts = require('gulp-typescript');
-var sourcemaps = require('gulp-sourcemaps');
 var minify = require("gulp-minify");
  
 gulp.task('sass', function () {
@@ -13,12 +12,12 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./css'));
 });
 
-gulp.task('concat', function () {
+gulp.task('prod', function () {
   return gulp.src(['./js/libs/**/*.js', './js/**/*.ts'])
   	.pipe(ts({
-            "noImplicitAny": false,
+          "noImplicitAny": false,
         	"module": "none",
-            "target": "es5",
+          "target": "es5",
         	"lib": ["es6", "es5", "es7", "dom"],
         	"allowSyntheticDefaultImports": true,
         	"removeComments": true,
